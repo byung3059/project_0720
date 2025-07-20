@@ -185,3 +185,17 @@ p {
     border-radius: 50%;
     background: var(--secbg-color) url(../images/slide_more_btn_p.svg)no-repeat center center;
 }
+
+@media(max-width: 1490px) {
+    .tit {
+        padding: 0 4rem;
+    }
+
+    .inner {
+        padding: 0 4rem;
+    }
+
+    .w_inner {
+        padding: 0 4rem;
+    }
+}
