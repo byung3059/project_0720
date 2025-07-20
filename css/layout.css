@@ -13,7 +13,8 @@
     --footerbg-color: #222222;
 
     --border-radius: 2.4rem;
-    --box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, 0.05);
+    --box-shadow: 0px 0px 1.6rem 0.2rem rgba(0, 0, 0, 0.05);
+    --box-shadow-hover: 0px 0px 1.6rem 0.2rem rgba(0, 0, 0, 0.1);
 }
 
 html {
@@ -32,7 +33,7 @@ html {
     }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 480px) {
     html {
         font-size: 2.17391304348vw;
     }
@@ -99,8 +100,8 @@ p {
 
 .tit .btn_wrap>a {
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
     text-indent: -9999px;
     border: 2px solid var(--primary-color);
@@ -196,6 +197,6 @@ p {
     }
 
     .w_inner {
-        padding: 0 4rem;
+        padding: 0 2.4rem;
     }
 }

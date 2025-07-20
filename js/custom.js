@@ -6,18 +6,45 @@ $(function () {
     });
     const main_basic_pro_slide = new Swiper('.main_basic_pro_slide', {
         loop: true,
-        slidesPerView: 4,
+        slidesPerView: 1,
         spaceBetween: 30,
 
         navigation: {
             nextEl: ".main_basic_pro_nav .arrow_next",
             prevEl: ".main_basic_pro_nav .arrow_prev",
         },
+
+        breakpoints: {
+            1500: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+            },
+
+            769: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+            480: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+        }
     });
     const main_pro_slide = new Swiper('.main_pro_slide', {
         loop: true,
-        slidesPerView: 3,
+        slidesPerView: 1,
         spaceBetween: 30,
+
+        breakpoints: {
+            769: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+            480: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+        }
     });
 
     $('#main_map .left .map_link_list_btn button').on('click', function () {
